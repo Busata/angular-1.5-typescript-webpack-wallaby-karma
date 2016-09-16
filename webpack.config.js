@@ -7,6 +7,7 @@ module.exports = {
         publicPath: "/assets/",
         filename: 'bundle.js'
     },
+    devtool: 'inline-source-map',
     resolve: {
         modulesDirectories: ['src', 'tests', 'node_modules'],
         extensions: ['', '.webpack.js', '.js','.ts']
