@@ -19,9 +19,9 @@ module.exports = function(config) {
         ],
 
         preprocessors: {
-            'beforeEachTest.ts': ['webpack'],
-            'src/**/*.spec.ts': ['webpack'],
-            'src/index.ts': ['webpack']
+            'beforeEachTest.ts': ['webpack','sourcemap'],
+            'src/**/*.spec.ts': ['webpack','sourcemap'],
+            'src/index.ts': ['webpack','sourcemap']
         },
         webpack: webpackConfig,
         webpackMiddleware: {
